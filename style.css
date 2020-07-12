@@ -1,0 +1,62 @@
+*, *:before, *:after {
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+html {
+    box-sizing:border-box;
+    background-color: aliceblue;
+}
+
+.game {
+    width:100%;
+    height:100vh;
+  
+}
+
+.players {
+    display:flex;
+    justify-content: space-evenly;
+    margin:1rem;
+    color:rgb(40, 182, 230);
+
+}
+
+.player-score, .computer-score {
+    font-size:3rem;
+}
+
+.choose {
+    display:flex;
+    justify-content: space-around;
+    font-size:2rem;
+    color:rgb(128, 226, 128);
+}
+
+.winner {
+    text-align: center;
+    margin-top:3rem;
+    font-size:4rem;
+    color:red;
+}
+
+.buttons {
+    display:flex;
+    justify-content: space-evenly;   
+    margin:4rem 20rem;
+    color:rgb(158, 158, 240);
+    font-size:5rem;
+    border:0.5rem solid rgb(111, 233, 111);
+}
+.btns {
+    padding:auto 3rem;
+}
+span {
+    margin-left:0.5rem;
+    color:red;
+}
+
+i {
+    cursor:pointer;
+}

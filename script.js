@@ -10,15 +10,17 @@ let allBtns = document.querySelectorAll(".btns");
 
 
 
-let playerSelection = allBtns.forEach(btn => {
-btn.addEventListener('click', () => {
-    playerChoice.innerHTML = btn.textContent;
-    let playerText = btn.textContent;
+// let playerSelection = allBtns.forEach(btn => {
+let playerSelection = window.addEventListener('keydown', (e) => {
+    // playerChoice.innerHTML = btn.textContent;
+    // let playerText = btn.textContent;
+    const key = document.querySelector(`.btns[data-key="${e.keyCode}"]`);
+    playerChoice.textContent = key.textContent;
     let computerText = computerPlay();
-    playRound(playerText, computerText);
+    playRound(key.textContent, computerText);
     Score();
 })
-});
+// });
 
  function computerPlay() {
     let random =  Math.floor(Math.random() * Math.floor(3));
